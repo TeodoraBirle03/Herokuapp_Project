@@ -14,11 +14,13 @@ class Secure_page(BasePage):
     def navigate_to_secure_page(self):
         self.driver.get('https://the-internet.herokuapp.com/secure')
 
-    # def see_message_succes_banner(self):
-    #     actual = self.driver.find_element(*self.MESSAGE_SUCCES_BANNER).text
-    #     print(actual)
-    #     expected = 'You logged into a secure area!'
-    #     self.assertEqual(actual, expected, "The success message is NOT displayed!")
+    def see_message_succes_banner(self):
+        actual = self.driver.find_element(*self.MESSAGE_SUCCES_BANNER).text
+        print(actual)
+        expected = 'You logged into a secure area!'
+        if expected in actual:
+            pass
+        # self.assertEqual(actual, expected, "The success message is NOT displayed!")
 
     def click_Logout(self):
         self.driver.find_element(*self.LOGOUT_BTN).click()

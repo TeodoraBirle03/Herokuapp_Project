@@ -9,7 +9,7 @@ Feature: Herokuapp form_authentication tests
       When heroku_login_page: I fill tomsmith in the username field
       When heroku_login_page: I fill SuperSecretPassword! in the password field
       When heroku_login_page: I click on the Login button
-#      When heroku_secure_page: I see the login success message
+      When heroku_secure_page: I see the login success message
       When heroku_secure_page: I click on the Logout button
       Then heroku_secure_page: I verify that I am on the heroku_login_page
 

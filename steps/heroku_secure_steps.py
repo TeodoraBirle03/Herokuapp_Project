@@ -4,9 +4,9 @@ from behave import *
 def step_impl(context):
     context.heroku_secure_page.navigate_to_secure_page()
 
-# @when('heroku_secure_page: I see the login success message')
-# def step_impl(context):
-#     context.heroku_secure_page.see_message_succes_banner()
+@when('heroku_secure_page: I see the login success message')
+def step_impl(context):
+    context.heroku_secure_page.see_message_succes_banner()
 
 @when('heroku_secure_page: I click on the Logout button')
 def step_impl(context):
