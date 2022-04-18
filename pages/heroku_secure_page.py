@@ -18,8 +18,7 @@ class Secure_page(BasePage):
         actual = self.driver.find_element(*self.MESSAGE_SUCCES_BANNER).text
         print(actual)
         expected = 'You logged into a secure area!'
-        if expected in actual:
-            pass
+        self.assertTrue(expected in actual, 'The secure message is not displayed')
         # self.assertEqual(actual, expected, "The success message is NOT displayed!")
 
     def click_Logout(self):
