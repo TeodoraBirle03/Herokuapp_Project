@@ -116,10 +116,10 @@ function Collapsible_expandAllFailed()
         <div id="summary">
           <p id="totals">
             <p id="feature_totals">Features: passed: 1</p>
-            <p id="scenario_totals">Scenarios: passed: 1</p>
-            <p id="step_totals">Steps: passed: 7</p>
+            <p id="scenario_totals">Scenarios: passed: 2</p>
+            <p id="step_totals">Steps: passed: 14</p>
           </p>
-          <p id="duration">Finished in 4.4 seconds</p>
+          <p id="duration">Finished in 4.9 seconds</p>
           <div id="expand-collapse">
             <a id="expander" href="#" onclick="Collapsible_expandAll('scenario_steps')">Expand All</a>
             <span> | </span>
@@ -153,7 +153,7 @@ function Collapsible_expandAllFailed()
             <div class="step_name">
               <span class="keyword">Given </span>
               <span class="step val">heroku_home_page: I am on the https://the-internet.herokuapp.com/ page</span>
-              <small class="step_duration">(2.144s)</small>
+              <small class="step_duration">(1.973s)</small>
             </div>
             <div class="step_file">
               <span>steps/heroku_home_steps.py:8</span>
@@ -164,7 +164,7 @@ function Collapsible_expandAllFailed()
             <div class="step_name">
               <span class="keyword">When </span>
               <span class="step val">heroku_home_page: I click on the Form Authentication link</span>
-              <small class="step_duration">(0.706s)</small>
+              <small class="step_duration">(0.622s)</small>
             </div>
             <div class="step_file">
               <span>steps/heroku_home_steps.py:12</span>
@@ -174,8 +174,12 @@ function Collapsible_expandAllFailed()
           <li class="step passed">
             <div class="step_name">
               <span class="keyword">When </span>
-              <span class="step val">heroku_login_page: I fill tomsmith in the username field</span>
-              <small class="step_duration">(0.183s)</small>
+              <span class="step val">
+                <span>heroku_login_page: I fill </span>
+                <b>tomsmith</b>
+                <span> in the username field</span>
+              </span>
+              <small class="step_duration">(0.142s)</small>
             </div>
             <div class="step_file">
               <span>steps/heroku_login_steps.py:11</span>
@@ -185,8 +189,12 @@ function Collapsible_expandAllFailed()
           <li class="step passed">
             <div class="step_name">
               <span class="keyword">When </span>
-              <span class="step val">heroku_login_page: I fill SuperSecretPassword! in the password field</span>
-              <small class="step_duration">(0.176s)</small>
+              <span class="step val">
+                <span>heroku_login_page: I fill </span>
+                <b>SuperSecretPassword!</b>
+                <span> in the password field</span>
+              </span>
+              <small class="step_duration">(0.085s)</small>
             </div>
             <div class="step_file">
               <span>steps/heroku_login_steps.py:15</span>
@@ -197,7 +205,7 @@ function Collapsible_expandAllFailed()
             <div class="step_name">
               <span class="keyword">When </span>
               <span class="step val">heroku_login_page: I click on the Login button</span>
-              <small class="step_duration">(0.541s)</small>
+              <small class="step_duration">(0.427s)</small>
             </div>
             <div class="step_file">
               <span>steps/heroku_login_steps.py:19</span>
@@ -208,7 +216,7 @@ function Collapsible_expandAllFailed()
             <div class="step_name">
               <span class="keyword">When </span>
               <span class="step val">heroku_secure_page: I see the login success message</span>
-              <small class="step_duration">(0.072s)</small>
+              <small class="step_duration">(0.032s)</small>
             </div>
             <div class="step_file">
               <span>steps/heroku_secure_steps.py:7</span>
@@ -219,7 +227,7 @@ function Collapsible_expandAllFailed()
             <div class="step_name">
               <span class="keyword">When </span>
               <span class="step val">heroku_secure_page: I click on the Logout button</span>
-              <small class="step_duration">(0.517s)</small>
+              <small class="step_duration">(0.410s)</small>
             </div>
             <div class="step_file">
               <span>steps/heroku_secure_steps.py:11</span>
@@ -230,10 +238,116 @@ function Collapsible_expandAllFailed()
             <div class="step_name">
               <span class="keyword">Then </span>
               <span class="step val">heroku_secure_page: I verify that I am on the heroku_login_page</span>
-              <small class="step_duration">(0.014s)</small>
+              <small class="step_duration">(0.006s)</small>
             </div>
             <div class="step_file">
               <span>steps/heroku_secure_steps.py:15</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/form_authentication.feature:17</span>
+        <span class="tag">@form_auth_flow</span>
+        <h3 onclick="Collapsible_toggle('scenario_1')">
+          <span class="val">Scenario: The form_authentication flow with invalid username and password</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_1">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">heroku_home_page: I am on the https://the-internet.herokuapp.com/ page</span>
+              <small class="step_duration">(0.251s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/heroku_home_steps.py:8</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">heroku_home_page: I click on the Form Authentication link</span>
+              <small class="step_duration">(0.305s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/heroku_home_steps.py:12</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>heroku_login_page: I fill </span>
+                <b>user</b>
+                <span> in the username field</span>
+              </span>
+              <small class="step_duration">(0.052s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/heroku_login_steps.py:11</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>heroku_login_page: I fill </span>
+                <b>Password</b>
+                <span> in the password field</span>
+              </span>
+              <small class="step_duration">(0.055s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/heroku_login_steps.py:15</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">heroku_login_page: I click on the Login button</span>
+              <small class="step_duration">(0.402s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/heroku_login_steps.py:19</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">heroku_login_page: I see the error message displayed</span>
+              <small class="step_duration">(0.027s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/heroku_login_steps.py:23</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">heroku_login_page: I click the X on the error message banner</span>
+              <small class="step_duration">(0.051s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/heroku_login_steps.py:27</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">heroku_login_page: I not see the error message displayed anymore</span>
+              <small class="step_duration">(0.023s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/heroku_login_steps.py:31</span>
             </div>
             <span class="embed"/>
           </li>
